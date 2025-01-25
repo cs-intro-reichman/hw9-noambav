@@ -14,6 +14,10 @@ public class ListIterator {
         return (current != null);
     }
 
+    public Node getNext() {
+        return current.next;
+    }
+
     /** Returns the current element in the list, and advances the cursor */
     public MemoryBlock next() {
         Node currentNode = current;

@@ -1,19 +1,19 @@
 /**
  * Represents a block of memory.
- * Each memory block has a base address, and a length in words. 
+ * Each memory block has a base address, and a length in words.
  */
 public class MemoryBlock {
 
-	int baseAddress;  // the address where this memory block begins
-	int length;       // the length of this memory block, in words
+	int baseAddress; // the address where this memory block begins
+	int length; // the length of this memory block, in words
 
 	/**
-	 * Constructs a new memory block with a given base address and length in words 
+	 * Constructs a new memory block with a given base address and length in words
 	 * 
 	 * @param baseAddress
-	 *        the address of the first word in this block
+	 *                    the address of the first word in this block
 	 * @param length
-	 *        the length of this memory block, in words
+	 *                    the length of this memory block, in words
 	 */
 	public MemoryBlock(int baseAddress, int length) {
 		this.baseAddress = baseAddress;
@@ -24,7 +24,7 @@ public class MemoryBlock {
 	 * Checks if this block has the same base address and length as the given block
 	 * 
 	 * @param other
-	 *        the given block
+	 *              the given block
 	 * @return true if this block equals the other block, false otherwise
 	 */
 	public boolean equals(MemoryBlock other) {
@@ -37,6 +37,6 @@ public class MemoryBlock {
 	 * For example: (208,10)
 	 */
 	public String toString() {
-		return "(" + baseAddress + " , " + length +")";
+		return "(" + baseAddress + " , " + length + ")";
 	}
 }
